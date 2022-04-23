@@ -36,7 +36,7 @@ export function setupVitePlugins(
     vueJsx,
     layouts,
     markdown,
-    mock,
+    // mock,
     pages,
     pwa,
     unocss,
