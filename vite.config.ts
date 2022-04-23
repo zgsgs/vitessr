@@ -12,6 +12,7 @@ export default defineConfig((configEnv) => {
       alias: {
         '~': vitePath.root,
         '@': vitePath.src,
+        'vue-i18n': 'vue-i18n/dist/vue-i18n.cjs.js',
       },
     },
     define: viteDefine,
