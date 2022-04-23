@@ -12,4 +12,11 @@
     "*.css": "postcss",
   },
   "editor.formatOnSave": false,
+  "docwriter.style": "Auto-detect",
+  "docwriter.progress.trackFunctions": false,
+  "docwriter.progress.trackMethods": false,
+  "docwriter.progress.trackClasses": true,
+  "docwriter.progress.trackTypes": true,
+  "docwriter.language": "Chinese",
+  "docwriter.hotkey.windows": "Alt + .",
 }

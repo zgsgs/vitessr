@@ -7,11 +7,22 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-https": "serve dist",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
-    "type:check": "vue-tsc --noEmit"
+    "type:check": "vue-tsc --noEmit",
+    "prepare": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgsgs/imitation-admin.git"
+  },
+  "author": "Jason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zgsgs/imitation-admin/issues"
+  },
+  "homepage": "https://github.com/zgsgs/imitation-admin#readme",
   "dependencies": {
     "@vueuse/core": "^8.3.0",
     "@vueuse/head": "^0.7.6",
@@ -25,6 +36,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.20.6",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@iconify-json/carbon": "^1.1.3",
     "@intlify/vite-plugin-vue-i18n": "^4.0.0",
     "@types/markdown-it-link-attributes": "^3.0.1",
@@ -38,6 +51,8 @@
     "eslint": "^8.13.0",
     "eslint-plugin-cypress": "^2.12.1",
     "https-localhost": "^4.7.1",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.0",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
     "mockjs": "^1.1.0",
