@@ -1,5 +1,5 @@
 import type { ProxyOptions } from 'vite'
-import { getEnvConfig } from '../../.env-config'
+import { getEnvConfig } from '../../.env.config'
 
 /**
  * 设置网络代理

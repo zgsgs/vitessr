@@ -3,14 +3,15 @@
   "packageManager": "pnpm@6.32.3",
   "scripts": {
     "build": "vite-ssg build",
-    "dev": "vite",
-    "lint": "eslint .",
+    "dev": "vite --open",
     "preview": "vite preview",
     "preview-https": "serve dist",
-    "test": "vitest --run",
+    "test": "vitest",
+    "test:commitlint": "vitest --run",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "type:check": "vue-tsc --noEmit",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "prepare": "husky install"
   },
   "repository": {
