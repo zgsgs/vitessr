@@ -23,11 +23,11 @@
     "src/typings/**/*.d.ts",
     "src/**/*",
     "src/**/*.vue",
-    "vite.config.*",
     "build/**/*.ts",
     "mock/**/*.ts",
-    ".env-config.ts",
-    "components.d.ts"
+    "test/**/*.ts",
+    ".env.config.*",
+    "vite.config.*",
   ],
   "exclude": [
     "/dist/**",
