@@ -1,10 +1,17 @@
 {
   "private": true,
   "packageManager": "pnpm@6.32.3",
+  "license": "ISC",
+  "author": "Jason",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgsgs/imitation-admin.git"
+  },
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --fix",
+    "lint:fix": "lint-staged",
     "preview": "vite preview",
     "preview-https": "serve dist",
     "test": "vitest --run",
@@ -13,16 +20,6 @@
     "type:check": "vue-tsc --noEmit",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zgsgs/imitation-admin.git"
-  },
-  "author": "Jason",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zgsgs/imitation-admin/issues"
-  },
-  "homepage": "https://github.com/zgsgs/imitation-admin#readme",
   "dependencies": {
     "@vueuse/core": "^8.3.0",
     "@vueuse/head": "^0.7.6",
@@ -76,5 +73,12 @@
     "vite-ssg-sitemap": "^0.2.4",
     "vitest": "^0.9.3",
     "vue-tsc": "^0.34.8"
-  }
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,ts,tsx,json}": "eslint --fix"
+  },
+  "bugs": {
+    "url": "https://github.com/zgsgs/imitation-admin/issues"
+  },
+  "homepage": "https://github.com/zgsgs/imitation-admin#readme"
 }
