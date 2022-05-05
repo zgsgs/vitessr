@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/pwa-192x192.png">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
+  <link rel="stylesheet" href="/resource/loading.css" />
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
+  <title><%= appName %></title>
+
   <script>
     (function() {
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -17,8 +21,26 @@
     })()
   </script>
 </head>
+
 <body class="font-sans">
-  <div id="app"></div>
+  <div id="app">
+    <div class="loading-container">
+      <div id="loadingLogo" class="loading-svg"></div>
+      <div class="loading-spin__container">
+        <div class="loading-spin">
+          <div class="left-0 top-0 loading-spin-item"></div>
+          <div class="left-0 bottom-0 loading-spin-item loading-delay-500"></div>
+          <div class="right-0 top-0 loading-spin-item loading-delay-1000"></div>
+          <div class="right-0 bottom-0 loading-spin-item loading-delay-1500"></div>
+        </div>
+      </div>
+      <div class="loading-title"><%= appTitle %></div>
+    </div>
+
+    <script src="/resource/loading.js"></script>
+  </div>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
+
 </html>
