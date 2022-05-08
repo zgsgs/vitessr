@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "vite-ssg build",
-    "dev": "vite",
+    "dev": "vite --open",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --fix",
     "lint:fix": "lint-staged",
     "preview": "vite preview",
