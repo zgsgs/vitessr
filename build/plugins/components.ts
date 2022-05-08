@@ -9,5 +9,5 @@ export default Components({
   // allow auto import and register components used in markdown
   include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
   resolvers: [NaiveUiResolver(), IconsResolver({ customCollections: ['custom'], componentPrefix: 'icon' })],
-  dts: 'src/typings/components.d.ts',
+  dts: 'types/components.d.ts',
 })

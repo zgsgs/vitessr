@@ -20,12 +20,12 @@
     },
   },
   "include": [
-    "src/typings/**/*.d.ts",
     "src/**/*",
     "src/**/*.vue",
     "build/**/*.ts",
     "mock/**/*.ts",
     "test/**/*.ts",
+    "types/**/*.d.ts",
     ".env.config.*",
     "vite.config.*",
   ],

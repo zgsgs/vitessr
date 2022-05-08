@@ -10,5 +10,5 @@ export default AutoImport({
     '@vueuse/head',
     '@vueuse/core',
   ],
-  dts: 'src/typings/auto-imports.d.ts',
+  dts: 'types/auto-imports.d.ts',
 })

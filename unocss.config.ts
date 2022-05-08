@@ -4,7 +4,7 @@ import {
   presetIcons,
   presetTypography,
   presetUno,
-  // presetWebFonts,
+  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -22,13 +22,14 @@ export default defineConfig({
       warn: true,
     }),
     presetTypography(),
-    // presetWebFonts({
-    //   fonts: {
-    //     sans: 'DM Sans',
-    //     serif: 'DM Serif Display',
-    //     mono: 'DM Mono',
-    //   },
-    // }),
+    // https://github.com/unocss/unocss/tree/main/packages/preset-web-fonts
+    presetWebFonts({
+      fonts: {
+        sans: 'DM Sans',
+        serif: 'DM Serif Display',
+        mono: 'DM Mono',
+      },
+    }),
   ],
   transformers: [
     transformerDirectives(),
